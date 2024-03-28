@@ -1,0 +1,19 @@
+# Android and Android Studio
+build/
+.gradle/
+captures/
+*.iml
+.idea/
+
+# Google Services
+google-services.json
+
+# Proguard
+proguard/
+
+# Local configuration
+local.properties
+
+# OS
+.DS_Store/
+Thumbs.db

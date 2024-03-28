@@ -1,0 +1,12 @@
+// Possible fallback for older versions of Gradle.
+/*
+pluginManagement {
+repositories {
+    google()
+    mavenCentral()
+    gradlePluginPortal()
+    }
+}
+*/
+
+include ':app'
