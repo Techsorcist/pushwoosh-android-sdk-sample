@@ -16,6 +16,4 @@
 #   public *;
 #}
 -keep class com.pushwoosh.** { *; }
--keep class com.arellomobile.** { *; }
 -dontwarn com.pushwoosh.**
--dontwarn com.arellomobile.**
