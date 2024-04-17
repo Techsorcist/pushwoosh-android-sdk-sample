@@ -1,10 +1,9 @@
 package com.pushwoosh.sample;
 
 import android.os.Bundle;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.pushwoosh.Pushwoosh;
-
-import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 

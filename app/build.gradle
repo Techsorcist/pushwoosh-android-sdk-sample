@@ -1,39 +1,38 @@
-apply plugin: 'com.android.application'
+plugins {
+    alias(libs.plugins.androidApplication)
+    id 'com.google.gms.google-services'
+}
 
 android {
+    namespace 'com.pushwoosh.sample'
+    compileSdk 34
+
     defaultConfig {
-        applicationId 'com.pushwoosh.sample'
-        minSdkVersion 26
-        targetSdkVersion 34
+        applicationId "com.pushwoosh.sample"
+        minSdk 26
+        targetSdk 34
         versionCode 1
         versionName "1.0"
     }
+
     buildTypes {
         release {
             minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
-
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
-    namespace 'com.pushwoosh.sample'
-    compileSdk 34
-
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation libs.appcompat
+    implementation libs.material
 
-    implementation "androidx.appcompat:appcompat:1.6.1"
-    implementation "androidx.legacy:legacy-support-v4:1.0.0"
+    implementation libs.pushwoosh
+    implementation libs.pushwoosh.firebase
 
-    implementation 'com.pushwoosh:pushwoosh:6.7.5'
-    implementation 'com.pushwoosh:pushwoosh-firebase:6.7.5'
-
-    implementation "com.google.firebase:firebase-messaging:${firebase}"
+    implementation libs.firebase.messaging
 }
-
-apply plugin: 'com.google.gms.google-services'

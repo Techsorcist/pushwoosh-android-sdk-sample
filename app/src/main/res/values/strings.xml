@@ -1,5 +1,9 @@
 <resources>
-    <string name="app_name">Pushwoosh Sample</string>
-    <string name="hello_world">Hello world!</string>
-    <string name="action_settings">Settings</string>
+	<string name="app_name">Pushwoosh Sample</string>
+
+	<!--
+	NOTE: pushwoosh_appid is your Pushwoosh Application Code, fcm_sender_id is the Sender ID
+	you received from your Firebase project	-->
+	<string name="pushwoosh_appid">537BA-0FB8C</string>
+	<string name="fcm_sender_id">886570988621</string>
 </resources>
