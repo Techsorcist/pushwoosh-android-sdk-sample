@@ -1,19 +1,26 @@
 # Android and Android Studio
-build/
-.gradle/
-captures/
+/build
+/captures
+/.idea
+/.gradle
 *.iml
-.idea/
+
+# Generated files
+bin/
+gen/
+out/
+*.ap_
 
 # Google Services
 google-services.json
 
 # Proguard
-proguard/
+/proguard
 
 # Local configuration
 local.properties
 
 # OS
-.DS_Store/
+.DS_Store
 Thumbs.db
+
