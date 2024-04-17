@@ -2,8 +2,9 @@
 	<string name="app_name">Pushwoosh Sample</string>
 
 	<!--
-	NOTE: pushwoosh_appid is your Pushwoosh Application Code, fcm_sender_id is the Sender ID
-	you received from your Firebase project	-->
-	<string name="pushwoosh_appid">537BA-0FB8C</string>
-	<string name="fcm_sender_id">886570988621</string>
+	NOTE: pushwoosh_appid is your Pushwoosh Application Code,
+	fcm_sender_id is the Sender ID	you received from your
+	Firebase project -->
+	<string name="pushwoosh_appid">XXXXX-XXXXX</string>
+	<string name="fcm_sender_id">000000000000</string>
 </resources>
