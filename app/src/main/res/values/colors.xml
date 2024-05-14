@@ -4,5 +4,6 @@
     <color name="charcoal">#FF364659</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="green">#FF00E6A0</color>
     <color name="notification_icon_color">#FF0059BE</color>
 </resources>

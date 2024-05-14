@@ -1,14 +1,175 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
     tools:context="com.pushwoosh.sample.MainActivity">
 
-</RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:padding="20dp"
+            android:background="@color/green"
+            android:gravity=""
+            android:text="Pushwoosh Demo"
+            android:textAllCaps="true"
+            android:layout_alignParentTop="true"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/activity_horizontal_margin">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:padding="16dp"
+                tools:srcCompat="@mipmap/ic_launcher" />
+
+            <!-- SET USER ID -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity=""
+                android:orientation="horizontal"
+                android:padding="0dp">
+
+                <Button
+                    android:id="@+id/setuseridbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:text="SET USER ID" />
+
+                <EditText
+                    android:id="@+id/setuseridtext"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="User ID" />
+            </LinearLayout>
+
+            <!-- POST EVENT -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity=""
+                android:orientation="horizontal"
+                android:padding="0dp">
+
+                <Button
+                    android:id="@+id/posteventbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:text="POST EVENT" />
+
+                <EditText
+                    android:id="@+id/posteventtext"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Event Name" />
+            </LinearLayout>
+
+            <!-- SET TAGS -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity=""
+                android:orientation="horizontal"
+                android:padding="0dp">
+
+                <Button
+                    android:id="@+id/settags"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="SET TAG" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:hint="KEY" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:hint="VALUE" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/gethwid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="GET HWID" />
+
+            <Button
+                android:id="@+id/getpushtoken"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="GET PUSH TOKEN" />
+
+            <Button
+                android:id="@+id/gettags"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="GET TAGS" />
+
+            <Button
+                android:id="@+id/resetbadges"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="RESET BADGES" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="16dp"
+                android:text="FOR HUAWEI DEVICES" />
+
+            <Button
+                android:id="@+id/enablehuawei"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ENABLE HUAWEI NOTIFICATIONS" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="16dp"
+                android:text="SETTINGS" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/registerforpush"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Register for push notifications" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/showforeground"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Show foreground alert" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

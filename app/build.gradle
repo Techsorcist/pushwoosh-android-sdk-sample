@@ -35,4 +35,6 @@ dependencies {
     implementation libs.pushwoosh.firebase
 
     implementation libs.firebase.messaging
+    implementation libs.activity
+    implementation libs.constraintlayout
 }
